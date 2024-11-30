@@ -1,5 +1,5 @@
 import { Hono } from 'hono';
-import { DID, HOSTNAME, SHORT_NAME } from './config';
+import { DID, HOSTNAME } from './config';
 
 const app = new Hono();
 
@@ -28,13 +28,6 @@ app.get('/.well-known/did.json', (c) => {
         serviceEndpoint: `https://${HOSTNAME}`,
       },
     ],
-  });
-});
-
-app.get('/xrpc/app.bsky.feed.describeFeedGenerator', (c) => {
-  return c.json({
-    did: DID,
-    feeds: [],
   });
 });
 

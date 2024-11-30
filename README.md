@@ -2,6 +2,10 @@
 
 Static Bluefeed is a minimal static site for Bluesky custom feeds.
 
+## Example (Demo)
+- https://static-bluefeed.rutan.dev/
+- https://bsky.app/profile/rutan.bsky.social/feed/staticBluefeed
+
 ## How to Build
 ```
 $ pnpm install

@@ -34,11 +34,7 @@ app.get('/.well-known/did.json', (c) => {
 app.get('/xrpc/app.bsky.feed.describeFeedGenerator', (c) => {
   return c.json({
     did: DID,
-    feeds: [
-      {
-        uri: `${DID}/app.bsky.feed.generator/${SHORT_NAME}`,
-      },
-    ],
+    feeds: [],
   });
 });
 
